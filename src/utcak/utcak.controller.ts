@@ -86,7 +86,6 @@ export default class utcakController implements Controller {
             const savedDocument = await createdDocument.save();
             res.send(savedDocument);
         } catch (error) {
-            res.status(400).send({ message: error.message });
             next(new HttpException(400, error.message));
         }
     };
