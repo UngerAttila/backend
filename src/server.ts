@@ -3,12 +3,12 @@ import App from "./app";
 import AuthenticationController from "./authentication/authentication.controller";
 import UserController from "./user/user.controller";
 import validateEnv from "./utils/validateEnv";
-import utcakController from "./utcak/utcak.controller";
-import adosavokController from "./adosavok/adosavok.controller";
+import kerdesekController from "./kerdesek/kerdesek.controller";
+import temakorokController from "./temakorok/temakorok.controller";
 
 config(); // Read and set variables from .env file.
 validateEnv();
 
-const app = new App([new AuthenticationController(), new UserController(), new utcakController(), new adosavokController()]);
+const app = new App([new AuthenticationController(), new UserController(), new kerdesekController(), new temakorokController()]);
 
 app.listen();
