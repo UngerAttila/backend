@@ -7,7 +7,7 @@ import Itemakorok from "./temakorok.interface";
 import CreatetemakorokDto from "./temakorok.dto";
 
 export default class temakorokController implements Controller {
-    public path = "/temakorok";
+    public path = "/api/temakorok";
     public router = Router();
     private temakorokM = temakorokModel;
 

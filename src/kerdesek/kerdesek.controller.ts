@@ -8,7 +8,7 @@ import validationMiddleware from "../middleware/validation.middleware";
 import CreatekerdesekDto from "./kerdesek.dto";
 
 export default class kerdesekController implements Controller {
-    public path = "/kerdesek";
+    public path = "/api/kerdesek";
     public router = Router();
     private kerdesekM = kerdesekModel;
 
