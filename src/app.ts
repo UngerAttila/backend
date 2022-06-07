@@ -40,7 +40,7 @@ export default class App {
         // Enabled CORS:
         this.app.use(
             cors({
-                origin: ["https://szamok.netlify.app", "http://localhost:8080"],
+                origin: ["https://endearing-bavarois-239df3.netlify.app/", "http://localhost:8080"],
                 credentials: true,
                 exposedHeaders: ["set-cookie"],
             }),
